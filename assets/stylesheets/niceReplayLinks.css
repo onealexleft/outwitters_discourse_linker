@@ -100,26 +100,26 @@ a.outwitters-replay-link:active span.outwitters-replay-nicelink {
 }
 
 .outwitters-replay-nicelink-league-1:before {
-	background:url('fluffy.png') center center no-repeat;	
+	background:url('/plugins/outwitters_onebox/images/fluffy.png') center center no-repeat;	
 	background-size: contain;
 }
 
 .outwitters-replay-nicelink-league-2:before {
-	background:url('clever.png') center center no-repeat;
+	background:url('/plugins/outwitters_onebox/images/clever.png') center center no-repeat;
 	background-size: contain;	
 }
 
 .outwitters-replay-nicelink-league-3:before {
-	background:url('gifted.png') center center no-repeat;
+	background:url('/plugins/outwitters_onebox/images/gifted.png') center center no-repeat;
 	background-size: contain;	
 }
 
 .outwitters-replay-nicelink-league-4:before {
-	background:url('master.png') center center no-repeat;	
+	background:url('/plugins/outwitters_onebox/images/master.png') center center no-repeat;	
 	background-size: contain;
 }
 
 .outwitters-replay-nicelink-league-5:before {
-	background:url('supertitan.png') center center no-repeat;
+	background:url('/plugins/outwitters_onebox/images/supertitan.png') center center no-repeat;
 	background-size: contain;	
 }
