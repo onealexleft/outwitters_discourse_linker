@@ -14,7 +14,7 @@ register_asset "javascripts/oml_linker.js", :server_side
 #patching genericOnebox to allow embedded html without iframes from whitelisted sites.
 class Onebox::Engine::OutwittersReplayOnebox
     include Onebox::Engine
-    include WhitelistedGenericOnebox
+    include Onebox::Engine::WhitelistedGenericOnebox
 
     matches_regexp(/^https:\/\/outwittersgame.appspot.com\/services\/embedreplay\?gameid=([A-Za-z0-9\-\_]+)$/)
 
