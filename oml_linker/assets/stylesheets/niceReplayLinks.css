@@ -1,0 +1,125 @@
+
+a.outwitters-replay-link {
+	position: relative;
+	display:inline-block;
+	margin: 2px !important;
+	text-decoration: none !important;	
+}
+
+a.outwitters-replay-link * {
+	display: inline-block;	
+	vertical-align:middle;
+	line-height: 24px;
+}
+
+a.outwitters-replay-link:hover {
+	text-decoration: none !important;	
+}
+
+span.outwitters-replay-nicelink {
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+a.outwitters-replay-link:hover span.outwitters-replay-nicelink,
+a.outwitters-replay-link:active span.outwitters-replay-nicelink {
+	border: 1px solid #888;
+	background: #f5f5f5;	
+}
+
+.outwitters-replay-nicelink-winner {
+	font-weight: bold;
+	background-color: #FFD7B3;
+	padding: 0px 5px;	
+}
+
+.outwitters-replay-nicelink-map {
+	text-shadow: 0px -1px 0px #666, 0px 1px 0px #fff;
+	color: #bbb;
+	padding: 0 8px;
+	border-right: 1px solid #ddd;
+	background: #f7f7f7;
+	margin-right: 5px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 15px;	
+}
+
+.outwitters-replay-nicelink-vs {
+	color: #999;
+	font-size:0.7em; 
+	font-weight:bold;
+	margin:0 8px;
+}
+
+.outwitters-replay-nicelink-vs:before {
+	content:'‹';	
+}
+.outwitters-replay-nicelink-vs:after {
+	content:'›';	
+}
+
+.outwitters-replay-nicelink-race {	
+	width: 26px;
+	height: 24px;	
+	margin: 0 3px 1px 5px;
+}
+
+.race-indent {
+	margin-right: -15px;	
+}
+
+.outwitters-replay-nicelink-team {
+	margin:	0px 4px;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif;
+	font-size: 15px;
+	color: #df4f11;
+}
+
+.outwitters-replay-nicelink-league-1,
+.outwitters-replay-nicelink-league-2,
+.outwitters-replay-nicelink-league-3,
+.outwitters-replay-nicelink-league-4,
+.outwitters-replay-nicelink-league-5 {
+	position: relative;	
+}
+
+.outwitters-replay-nicelink-league-1:before,
+.outwitters-replay-nicelink-league-2:before,
+.outwitters-replay-nicelink-league-3:before,
+.outwitters-replay-nicelink-league-4:before,
+.outwitters-replay-nicelink-league-5:before {
+	position: absolute;
+	content:' ';
+	display: block;
+	top: 7px;
+	right: -2px;
+	z-index: 100000;
+	width: 18px;
+	height: 18px;
+}
+
+.outwitters-replay-nicelink-league-1:before {
+	background:url('fluffy.png') center center no-repeat;	
+	background-size: contain;
+}
+
+.outwitters-replay-nicelink-league-2:before {
+	background:url('clever.png') center center no-repeat;
+	background-size: contain;	
+}
+
+.outwitters-replay-nicelink-league-3:before {
+	background:url('gifted.png') center center no-repeat;
+	background-size: contain;	
+}
+
+.outwitters-replay-nicelink-league-4:before {
+	background:url('master.png') center center no-repeat;	
+	background-size: contain;
+}
+
+.outwitters-replay-nicelink-league-5:before {
+	background:url('supertitan.png') center center no-repeat;
+	background-size: contain;	
+}

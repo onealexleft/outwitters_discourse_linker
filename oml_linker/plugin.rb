@@ -5,6 +5,7 @@
 
 # uses server side to ensure markdown pipeline on the server knows about it
 register_asset "javascripts/oml_linker.js", :server_side
+register_asset "stylesheets/niceReplayLinks.css"
 
 # Without this, all the Onebox stuff isn't loaded,
 # so methods like `matches_regexp` do not work.
@@ -16,7 +17,7 @@ class Onebox::Engine::OutwittersReplayOnebox
     include Onebox::Engine
     include Onebox::Engine::StandardEmbed
     include Onebox::LayoutSupport
-    
+
     def self.priority
         0
     end
@@ -35,4 +36,10 @@ class Onebox::Engine::OutwittersReplayOnebox
         end 
         raw
     end 
+end
+
+after_initialize do
+
+    #whitelist replay link images
+    Post::white_listed_image_classes << "oml_linker"
 end
