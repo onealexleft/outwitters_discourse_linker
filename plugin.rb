@@ -1,4 +1,4 @@
-# name: OML Linker
+# name: outwitters_onebox
 # about: Takes any Outwitters "outwitters://" link and transforms it into an oembeddable link
 # version: 0.1
 # authors: Alex Okafor
