@@ -15,6 +15,11 @@ Onebox = Onebox
 class Onebox::Engine::OutwittersReplayOnebox
     include Onebox::Engine
     include Onebox::Engine::StandardEmbed
+    include Onebox::LayoutSupport
+    
+    def self.priority
+        0
+    end
 
     matches_regexp(/^https:\/\/outwittersgame.appspot.com\/services\/embedreplay\?gameid=([A-Za-z0-9\-\_]+)$/)
 
@@ -27,6 +32,7 @@ class Onebox::Engine::OutwittersReplayOnebox
         if raw.is_a?(Hash)
             raw[:link] ||= link
             return raw
-        end  
+        end 
+        raw
     end 
 end
