@@ -41,5 +41,5 @@ end
 after_initialize do
 
     #whitelist replay link images
-    Post::white_listed_image_classes << "oml_linker"
+    Post::white_listed_image_classes << "outwitters_onebox"
 end
