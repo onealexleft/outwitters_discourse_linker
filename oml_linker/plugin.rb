@@ -9,7 +9,7 @@ register_asset "javascripts/oml_linker.js", :server_side
 # Without this, all the Onebox stuff isn't loaded,
 # so methods like `matches_regexp` do not work.
 # It's weird. I know.
-#Onebox = Onebox
+Onebox = Onebox
 
 #patching genericOnebox to allow embedded html without iframes from whitelisted sites.
 class Onebox::Engine::OutwittersReplayOnebox
