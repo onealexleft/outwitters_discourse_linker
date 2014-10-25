@@ -14,11 +14,19 @@ Onebox = Onebox
 #patching genericOnebox to allow embedded html without iframes from whitelisted sites.
 class Onebox::Engine::OutwittersReplayOnebox
     include Onebox::Engine
+    include Onebox::Engine::StandardEmbed
 
     matches_regexp(/^https:\/\/outwittersgame.appspot.com\/services\/embedreplay\?gameid=([A-Za-z0-9\-\_]+)$/)
 
-    def generic_html
-        return data[:html] if data[:html]
+    def to_html
+        return raw[:html] if raw[:html]
         layout.to_html
     end
+
+    def data
+        if raw.is_a?(Hash)
+            raw[:link] ||= link
+            return raw
+        end  
+    end 
 end
