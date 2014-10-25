@@ -38,8 +38,3 @@ class Onebox::Engine::OutwittersReplayOnebox
     end 
 end
 
-after_initialize do
-
-    #whitelist replay link images
-    Post::white_listed_image_classes << "outwitters_onebox"
-end
